@@ -12,6 +12,7 @@
   --logo-color-main: #2196f3;
   --logo-color-second: #000000;
   --contact-color-footer: rgba(255, 255, 255, 0.6);
+  --icon-bg-color: #f5f4fa;
 }
 
 body {
@@ -117,12 +118,13 @@ p {
 .contact-list .list:focus,
 .nav-list .active {
   color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 .page-header .contact-list li + li {
   margin-left: 50px;
 }
-.contact-list .list {
+.contact-list a {
   color: var(--text-color-second);
   text-decoration: none;
 
@@ -131,10 +133,6 @@ p {
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02em;
-}
-.contact-list .list:hover,
-.contact-list .list:focus {
-  color: var(--accent-color);
 }
 
 .active {
@@ -238,6 +236,7 @@ p {
 .team .list {
   display: flex;
   text-align: center;
+  justify-content: center;
 }
 .team-list {
   background-color: var(--main-page-background);
@@ -368,3 +367,138 @@ p {
   line-height: 1.9;
   letter-spacing: 0.03em;
 }
+
+/* ICONS */
+
+.icons-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+  background-color: var(--icon-bg-color);
+}
+.icon {
+  fill: #000000;
+  width: 65px;
+  height: 70px;
+}
+.icons-list {
+  display: flex;
+  margin-bottom: 30px;
+}
+.icons-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+/* SOTIAL ICONS */
+.sotial-icons-list {
+  margin-top: 16px;
+}
+.sotial-icons-list .sl-icon,
+.footer .footer-icons-list-item {
+  width: 44px;
+  height: 44px;
+}
+.sotial-icons-list .sotial-icons:not(:last-child),
+.footer-icons-list .icons-list-item:not(:last-child) {
+  margin-right: 10px;
+}
+/* CLIENT SECTION*/
+.client-border {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+
+  fill: #afb1b8;
+
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.client-border:hover,
+.client-border:focus {
+  fill: var(--logo-color-main);
+  border-color: var(--logo-color-main);
+}
+.client-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.client-icon {
+  display: inline-block;
+  text-align: center;
+  width: 106px;
+  height: 60px;
+}
+
+/* FOOTER ICONS */
+
+.footer-wrapper {
+  display: flex;
+}
+.footer-icons {
+  margin-left: 70px;
+}
+.footer .join-us {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+
+  margin-bottom: 20px;
+  margin-top: 12px;
+
+  color: var(--text-color-third);
+}
+.footer-icons-list {
+  display: flex;
+}
+/*HEADER ICONS*/
+.page-header .contact-list a {
+  display: flex;
+  align-items: center;
+}
+
+.contact-list .mail-icon {
+  fill: var(--text-color-second);
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+}
+.contact-list .phone-icon {
+  fill: var(--text-color-second);
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+.contact-list svg:hover,
+.contact-list svg:focus {
+  fill: var(--accent-color);
+}
+/* .contact-list .phone::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  background-image: url("../img/icons/sprite.svg#icon-phone");
+}
+
+.contact-list .mail::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  background-image: url("../img/icons/sprite.svg#icon-mail");
+  background-color: black; */
+
+/* .contact-list .mail::before:hover,
+.contact-list .phone::before:hover {
+  fill: var(--accent-color);
+} */
