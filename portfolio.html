@@ -23,8 +23,14 @@
           </ul>
         </nav>
         <ul class="list contact-list">
-          <li><a href="mailto:info@devstudio.com" class="list">info@devstudio.com</a></li>
-          <li><a href="tel:+380961111111" class="list">+38 096 111 11 11</a></li>
+          <li><a class="mail list" href="mailto:info@devstudio.com">
+              <svg class="mail-icon">
+                <use href="/img/icons.svg#icon-mail"></use>
+              </svg>info@devstudio.com</a></li>
+          <li><a class="phone list" href="tel:+380961111111">
+              <svg class="phone-icon">
+                <use href="/img/icons.svg#icon-phone"></use>
+              </svg>+38 096 111 11 11</a></li>
         </ul>
       </div>
     </header>
@@ -40,63 +46,63 @@
             </ul>
            <ul class="list portfolio">
             <li>
-              <img class="image" src="img/img.jpg" alt="img">
+              <img class="image" src="img/portfolio/img1.jpg" alt="img1">
               <div class="border">
                 <h3 class="list-item">Технокряк</h3>
                 <p class="item-filter">Веб-сайт</p>
               </div>
             </li>
             <li>
-              <img class="image" src="img/img1.jpg" alt="img1">
+              <img class="image" src="img/portfolio/img2.jpg" alt="img2">
               <div class="border">
                 <h3 class="list-item">Постер New Orlean vs Golden Star</h3>
                 <p class="item-filter">Дизайн</p>
               </div>
             </li>
             <li>
-              <img class="image" src="img/img2.jpg" alt="img2">
+              <img class="image" src="img/portfolio/img3.jpg" alt="img3">
               <div class="border">
                 <h3 class="list-item">Ресторан Seafood</h3>
                 <p class="item-filter">Приложение</p>
               </div>
             </li>
             <li>
-              <img class="image" src="img/img3.jpg" alt="img3">
+              <img class="image" src="img/portfolio/img4.jpg" alt="img4">
               <div class="border">
                 <h3 class="list-item">Проект Prime</h3>
                 <p class="item-filter">Маркетинг</p>
               </div>
             </li>
             <li>
-              <img class="image" src="img/img4.jpg" alt="img4">
+              <img class="image" src="img/portfolio/img5.jpg" alt="img5">
               <div class="border">
                 <h3 class="list-item">Проект Boxes</h3>
                 <p class="item-filter">Приложение</p>
               </div>
             </li>
             <li>
-              <img class="image" src="img/img5.jpg" alt="img5">
+              <img class="image" src="img/portfolio/img6.jpg" alt="img6">
               <div class="border">
                 <h3 class="list-item">Inspiration has no Borders</h3>
                 <p class="item-filter">Веб-сайт</p>
               </div>
               </li>
             <li>
-              <img class="image" src="img/img6.jpg" alt="img6">
+              <img class="image" src="img/portfolio/img7.jpg" alt="img7">
               <div class="border">
                 <h3 class="list-item">Издание Limited Edition</h3>
                 <p class="item-filter">Дизайн</p>
               </div>
               </li>
             <li>
-              <img class="image" src="img/img7.jpg" alt="img7">
+              <img class="image" src="img/portfolio/img8.jpg" alt="img8">
               <div class="border">
                 <h3 class="list-item">Проект LAB</h3>
                 <p class="item-filter">Маркетинг</p>
               </div>
              </li>
               <li>
-              <img class="image" src="img/img8.jpg" alt="img8">
+              <img class="image" src="img/portfolio/img9.jpg" alt="img9">
               <div class="border">
                 <h3 class="list-item">Growing Business</h3>
                 <p class="item-filter">Приложение</p>
@@ -106,15 +112,53 @@
           </div>
         </section>
       </main>
-      <footer class="footer">
-        <div class="container">
-          <a href="" class="logo-main logo logo-footer">Web<span class="logo-white logo">Studio</span></a>
-          <address class="adress">г. Киев, пр-т Леси Украинки, 26</address>
-          <ul class="contact-list list">
-            <li class="footer-list"><a href="mailto:info@example.com" class="list footer-list-item">info@example.com</a></li>
-            <li class="footer-list"><a href="tel:+380991111111" class="list footer-list-item">+38 099 111 11 11</a></li>
-          </ul>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-wrapper">
+          <div class="adress-wrapper">
+            <a href="index.html" class="logo-main logo logo-footer">Web<span class="logo-white logo">Studio</span></a>
+            <address class="adress">г. Киев, пр-т Леси Украинки, 26</address>
+            <ul class="contact-list list ">
+              <li class="footer-list"><a href="mailto:info@example.com" class="list footer-list-item">info@example.com</a>
+              </li>
+              <li class="footer-list"><a href="tel:+380991111111" class="list footer-list-item">+38 099 111 11 11</a></li>
+            </ul>
+          </div>
+          <div class="footer-icons">
+            <p class="join-us">ПРИСОИДЕНЯЙТЕСЬ</p>
+            <ul class="list footer-icons-list">
+              <li class="icons-list-item">
+                <a class="footer-sotial-link" href="#">
+                  <svg class="footer-icons-list-item">
+                    <use href="/img/icons.svg#icon-instagramm"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="icons-list-item">
+                <a class="footer-sotial-link" href="#">
+                  <svg class="footer-icons-list-item">
+                    <use href="/img/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="icons-list-item">
+                <a class="footer-sotial-link" href="#">
+                  <svg class="footer-icons-list-item">
+                    <use href="/img/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="icons-list-item">
+                <a class="footer-sotial-link" href="#">
+                  <svg class="footer-icons-list-item">
+                    <use href="/img/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
+      </div>
     </footer>
   </body>
 </html>

@@ -13,6 +13,7 @@
   --logo-color-second: #000000;
   --contact-color-footer: rgba(255, 255, 255, 0.6);
   --icon-bg-color: #f5f4fa;
+  --sotial-link-bg-footer: rgba(255, 255, 255, 0.1);
 }
 
 body {
@@ -118,13 +119,12 @@ p {
 .contact-list .list:focus,
 .nav-list .active {
   color: var(--accent-color);
-  fill: var(--accent-color);
 }
 
 .page-header .contact-list li + li {
   margin-left: 50px;
 }
-.contact-list a {
+.contact-list .list {
   color: var(--text-color-second);
   text-decoration: none;
 
@@ -397,9 +397,31 @@ p {
 }
 .sotial-icons-list .sl-icon,
 .footer .footer-icons-list-item {
+  fill: #afb1b8;
+
+  width: 20px;
+  height: 20px;
+}
+
+.sotial-icons-list .sotial-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   width: 44px;
   height: 44px;
+
+  border-radius: 50%;
 }
+.sotial-link:hover,
+.sotial-link:focus {
+  background-color: var(--accent-color);
+}
+.sotial-link:hover > svg,
+.sotial-link:focus > svg {
+  fill: var(--button-text-color-hover);
+}
+
 .sotial-icons-list .sotial-icons:not(:last-child),
 .footer-icons-list .icons-list-item:not(:last-child) {
   margin-right: 10px;
@@ -457,6 +479,25 @@ p {
 .footer-icons-list {
   display: flex;
 }
+
+.footer-sotial-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--sotial-link-bg-footer);
+  border-radius: 50%;
+}
+.footer-icons .footer-icons-list-item {
+  fill: #fff;
+}
+.footer-icons .footer-sotial-link:hover,
+.footer-icons .footer-sotial-link:focus {
+  background-color: var(--accent-color);
+}
 /*HEADER ICONS*/
 .page-header .contact-list a {
   display: flex;
@@ -476,29 +517,7 @@ p {
   margin-right: 10px;
 }
 
-.contact-list svg:hover,
-.contact-list svg:focus {
+.list:hover > svg,
+.list:focus > svg {
   fill: var(--accent-color);
 }
-/* .contact-list .phone::before {
-  content: "";
-  display: inline-block;
-  width: 10px;
-  height: 16px;
-  margin-right: 10px;
-  background-image: url("../img/icons/sprite.svg#icon-phone");
-}
-
-.contact-list .mail::before {
-  content: "";
-  display: inline-block;
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
-  background-image: url("../img/icons/sprite.svg#icon-mail");
-  background-color: black; */
-
-/* .contact-list .mail::before:hover,
-.contact-list .phone::before:hover {
-  fill: var(--accent-color);
-} */
